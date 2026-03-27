@@ -85,62 +85,100 @@
         </div>
       </div>
     </section>
-  <section class="u-clearfix u-color-var u-section-2" id="block-10">
+<section class="u-clearfix u-color-var u-section-2" id="block-10">
 
   <style>
-    /* Общие стили */
-    .u-section-2 .u-image-1,
-    .u-section-2 .u-image-2 {
-      display: block;
+    /* Фикс от наезда */
+    .u-section-2 .u-layout-row {
+      display: flex;
+      flex-wrap: wrap !important;
+    }
+
+    .u-section-2 .u-layout-cell {
+      display: block !important;
+    }
+
+    .u-section-2 img {
       max-width: 100%;
       height: auto;
-      margin: 0 auto 20px auto;
+      display: block;
     }
 
-    .u-section-2 .u-container-layout-1,
-    .u-section-2 .u-container-layout-2 {
-      padding: 20px;
+    .u-section-2 .u-text,
+    .u-section-2 ul,
+    .u-section-2 li {
+      position: relative !important;
+      z-index: 2;
     }
 
-    /* МОБИЛЬНАЯ ВЕРСИЯ */
+    /* МОБИЛКА */
     @media (max-width: 767px) {
 
       .u-section-2 .u-layout-row {
-        display: flex;
-        flex-direction: column;
+        display: block !important;
       }
 
       .u-section-2 .u-layout-cell {
         width: 100% !important;
+        margin-bottom: 25px;
       }
 
       .u-section-2 .u-container-layout-1,
       .u-section-2 .u-container-layout-2 {
-        padding: 15px !important;
+        padding: 10px !important;
       }
 
       .u-section-2 .u-image-1,
       .u-section-2 .u-image-2 {
         width: 100% !important;
-        height: auto !important;
-        margin-bottom: 15px;
+        margin: 0 0 15px 0;
       }
 
-      .u-section-2 .u-text-1,
-      .u-section-2 .u-text-3 {
-        font-size: 20px !important;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: left;
+      /* Убираем абсолютные позиции Nicepage */
+      .u-section-2 * {
+        position: static !important;
+        transform: none !important;
       }
 
-      .u-section-2 .u-text-2,
-      .u-section-2 .u-text-4 {
-        font-size: 16px !important;
-        line-height: 1.6;
+      .u-section-2 .u-text-3 span {
+        font-size: 22px !important;
       }
     }
   </style>
+
+  <div class="u-clearfix u-sheet">
+    <div class="u-layout-wrap">
+      <div class="u-layout">
+        <div class="u-layout-row">
+
+          <div class="u-layout-cell u-size-24">
+            <div class="u-container-layout">
+              <img src="images/image-4.png" alt="">
+              <h5>💡 Для кого?</h5>
+              <ul>
+                <li>Діти (легко і цікаво)</li>
+                <li>Підлітки (сучасно і практично)</li>
+                <li>Початківці (з нуля до впевненості)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="u-layout-cell u-size-36">
+            <div class="u-container-layout">
+              <h2>💡 Як проходять уроки</h2>
+              <p>1. Інтерактивні завдання</p>
+              <p>2. Багато розмовної практики</p>
+              <p>3. Сучасні матеріали</p>
+              <p>4. Пояснення простими словами</p>
+              <img src="images/image-5.png" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <div class="u-clearfix u-sheet u-sheet-1">
     <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
